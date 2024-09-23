@@ -10,7 +10,7 @@ export default function add(){
         e.preventDefault(); 
 
         try {
-            const response = await fetch('http://localhost:5038/add', {
+            const response = await fetch('http://localhost:5058/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -26,7 +26,8 @@ export default function add(){
                 setGrade('');
             } else {
                 console.error('Error adding student:', response.statusText);
-            }
+            } 
+            console.log(response);
         } catch (error) {
             console.error('Network error:', error);
         }

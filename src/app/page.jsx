@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
       const fetchStudents = async (e) => {
           try {
-              const response = await fetch('http://localhost:5038/get'); 
+              const response = await fetch('http://localhost:5058/get'); 
               if (!response.ok) {
                   throw new Error('Network response was not ok');
               }
@@ -25,7 +25,7 @@ export default function Home() {
   }, []);
   const srarch_result = async (e)=>{
     try {
-      const response = await fetch('http://localhost:5038/serch', {
+      const response = await fetch('http://localhost:5058/search', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

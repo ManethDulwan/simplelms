@@ -8,7 +8,7 @@ export default function Delete(){
         e.preventDefault(); 
 
         try {
-            const response = await fetch('http://localhost:5038/delete', {
+            const response = await fetch('http://localhost:5058/delete', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

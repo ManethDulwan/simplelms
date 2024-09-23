@@ -11,7 +11,7 @@ export default function Update(){
 
 
         try {
-            const response = await fetch('http://localhost:5038/update', {
+            const response = await fetch('http://localhost:5058/update', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
